@@ -14,4 +14,8 @@ const functionScope = () => {
   const func = () => {
     return scope;
   };
+  console.log(func());
 };
+
+functionScope(); // log: I am just a local
+console.log(scope); // log: I am global
